@@ -1,11 +1,11 @@
 import React from 'react';
 import Logo from '../images/logo1.jpg';
-import "../styles.css"
 
-export default Header => {
+
+export default Header = () => {
     return (
         <div className="container">
-            <img src={Logo} alt='logo' />
+            <img id="head-img" src={Logo} alt='logo' />
 
             <div className="nav-bar">
                 <ul className="navLinks">
