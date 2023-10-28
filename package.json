@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "parcel": "^2.10.1"
+    "parcel": "^2.10.1",
+    "process": "^0.11.10"
   },
   "name": "food-ordering-app",
   "version": "1.0.0",
@@ -104,8 +105,8 @@
   },
   "scripts": {
     "test": "jest",
-    "start" : "parcel index.html",
-    "build" : "parcel build index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -120,7 +121,7 @@
   "bugs": {
     "url": "https://github.com/Ash2901/Food-ordering-App/issues"
   },
-  "browserlist" : [
+  "browserlist": [
     "last 2 chrome version"
   ],
   "homepage": "https://github.com/Ash2901/Food-ordering-App#readme"
