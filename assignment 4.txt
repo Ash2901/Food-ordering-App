@@ -1,0 +1,55 @@
+	1. Is JSX mandatory for React?
+		a. No JSX is not mandatory for React we can use following statement instead of JSX:  const element = React.createElement('div', null, 'Hello, World!');
+		b. As we can see that for large scale Applications above statement becomes complicated that's why JSX is preferred in React.
+		
+	2. Is ES6 mandatory for React?
+		a. ES6 is not strictly mandatory for React, it's the modern and recommended way to write React applications. It not only makes your code more readable but also helps you take full advantage of the latest features and best practices in the React ecosystem. 
+		
+	3. {Component} vs {<Component />} vs {<Component> </Component>} in JSX?
+		a. {Component} : It is used to insert a JavaScript expression inside JSX.
+		b. <Component /> : It is used to render a component inside JSX.
+		c. <Component> </Component>: It is used when we wrap multiple elements inside same component.
+		
+	4. How can I write comments in JSX?
+		a. Single line comment : {/* -------- */}
+		b. Multiline comment : {/* ---
+						--- */}
+	5. What is <React.Fragment></React.Fragment> and <></> ?
+		a. As we know that React component can return only one element so it is advisable to use fragments in our code to make it more efficient.
+		b. It is optional to write React.Fragment both of the above mentioned statements means same.
+		c. Fragments  are used to group multiple elements without introducing an additional parent DOM element in the rendered output. These  are used to group multiple elements without introducing an additional parent DOM element in the rendered output. 
+		
+	6. What is Virtual DOM?
+		a. It is a copy of Real DOM.
+		b. It used in React for faster performance. If there is any change in component rather than rendering entire component again and again all the changes will happen in Virtual DOM tree and at the end Virtual DOM is compared with Real DOM and all the changes are made and component is rendered only once.
+		
+	7. What is Reconcilation in React?
+		a. Reconciliation, also known as the "reconciliation algorithm" or "diffing algorithm," is a key process in React that's responsible for updating the actual DOM to reflect changes in the Virtual DOM efficiently. When you make changes to your React application's state or props, React needs to determine how to update the rendered UI to reflect those changes without re-rendering the entire component tree. Reconciliation is the process of identifying and applying these changes in the most efficient way.
+		b. Basically it is way to updated changes in Real DOM by comparing it with Virtual DOM.
+		
+	8. What is React Fiber?
+		a. React Fiber is a significant reimplementation of React's core algorithm that brings improved performance, concurrent rendering, error handling, and extensibility to React applications. 
+		
+	9. Why we need keys in React? When do we need keys in React?
+		a. Keys are unique id which is used to identify objects in case of array of objects.
+		b. Key is unique value in a data.
+		c. If unique ID is not there and some new object is added then React will render entire objects present inside component.
+		
+	10. Can we use index as a keys in React?
+		a. If order of items are changed then entire data will be affected.
+		b. If we don't specify key then by default React considers index as a key.
+		
+	11. What is props in React? Ways to configure props?
+		a. In React, "props" is short for "properties," and it's a mechanism for passing data from a parent component to a child component. 
+		b. Case 1 : <Name name = {Ashish}> , function myName(props) {return props.name};
+		c. Case 2 : <Name name = {Ashish}> , function myName(props) const {name} = props
+		 {return name};
+		d. Case 3 : <Name name = {Ashish}> , function myName({name}) {return .name};
+		
+	12. What is a Config Driven UI?
+		a. It is basically controlling UI's based on Data.
+		b. Ex: In food delivery application we get Restaurants based on locations.
+		c. A "config-driven UI" or "configuration-driven UI" is a design approach where the layout, behavior, and appearance of a user interface are defined by a configuration or set of parameters rather than hardcoding these aspects in the application's source code. This approach is commonly used to build flexible and customizable user interfaces, often in scenarios where the UI needs to be easily adapted or configured without requiring code  changes.
+		
+	13. What is optional Chaining?
+		a. Optional chaining is a feature in JavaScript that provides a concise and safe way to access properties of objects when they may not be defined. It's particularly useful when working with deeply nested object structures and helps avoid "cannot read property of undefined" errors. Optional chaining is also available in React applications and is often used when working with props and state.
