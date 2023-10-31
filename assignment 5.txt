@@ -1,0 +1,15 @@
+	1. What are difference between Named Export, Default export and * as export?
+		a. A default export allows us to export a single value or function as the default export of a module. A named export allows us to export multiple values or functions from a module.
+		b. Ex: named: export {const1, const2} data;
+		c. Ex: default: export default data;
+		d. And * export, exports all the functions present in a component.
+		
+	2. What is the importance of config.js file?
+		a. Config. js allows developers to configure their applications in an XML block instead of hard-coding values inside their scripts or in JSON objects. 
+		
+	3. What are React Hooks?
+		a. React Hooks are simple JavaScript functions that we can use to isolate the reusable part from a functional component. Hooks can be stateful and can manage side-effects.
+		
+	4. Why do we need a useState Hook?
+		a. The React useState Hook allows you to have state variables in functional components. You pass the initial state to this function, and it returns a variable with the current state value
+        b.    Ex: const [state, setState] = useState(0);
