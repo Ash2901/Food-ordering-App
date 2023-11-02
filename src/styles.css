@@ -41,3 +41,20 @@
 .res-btn {
     margin: 10px;
 }
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.input-text{
+    height: 50px;
+    width: 200px;
+}
+.search-image{
+    height: 50px;
+    width: 50px;
+}
+.search-image:hover{
+    border: 1px solid #000;
+    cursor: pointer;
+}

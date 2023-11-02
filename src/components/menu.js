@@ -4,7 +4,7 @@ import { CDN_URL } from '../utils/constant';
 
 export default Menu = (props) => {
     const { resData } = props; //always key will be passed here
-    const {cloudinaryImageId, name, cuisines, avgRating, costForTwo, slaString} = resData?.data;
+    const {cloudinaryImageId, name, cuisines, avgRating, costForTwo, slaString} = resData?.info;
     return (
         <div>
             <div className="res-card">
@@ -13,7 +13,8 @@ export default Menu = (props) => {
                 <h4>{cuisines.join(", ")}</h4> 
                 <h4>{avgRating} ⭐</h4>
                 {/* <h4>{resData.data.costForTwoString}</h4>  */}
-                <h4>₹{costForTwo/100} FOR TWO</h4>
+                {/* <h4>₹{costForTwo/100} FOR TWO</h4> */}
+                <h4>{costForTwo}</h4>
                 <h4>{slaString}</h4> 
             </div>
         </div>
