@@ -26,7 +26,7 @@
 .res-card {
     width: 200px;
     height: 400px;
-    background-color: lavender;
+    background-color: #f0f0f0;
     margin: 10px;
     padding: 5px;
 }
@@ -57,4 +57,23 @@
 .search-image:hover{
     border: 1px solid #000;
     cursor: pointer;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shimmer-card{
+    width: 200px;
+    height: 400px;
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 5px;
+}
+.login-btn{
+    font-size: 22px;
+}
+.login-btn:hover {
+    cursor: pointer;
+    border: 1px solid black;
 }
