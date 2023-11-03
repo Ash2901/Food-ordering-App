@@ -52,11 +52,13 @@ const Body = () => {
         <button
           className="res-btn"
           onClick={() => {
-            const filteredlist = listOfRestaurant.filter(
-              (res) => res.info.avgRating > 4
-            );
-            //console.log(filteredlist);
-            setListOfRestaurant(filteredlist);
+            const filteredlist = filteredRestaurant.filter(
+              (res) => {
+                if (res && res?.info && res?.info?.avgRating) { //Optional chaining i.e chaining happens only if object exists
+                  return (res.info.avgRating > 4)
+                }});
+           // console.log(filteredlist);
+            setfilteredRestaurant(filteredlist);
           }}
         >
           Top Rated Restaurants

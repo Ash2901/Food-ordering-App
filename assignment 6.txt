@@ -1,0 +1,42 @@
+	1. What is Microservice?
+		a. Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs.
+		
+	2. What is Monolithic architecture?
+		a. A monolithic architecture is a singular, large computing network with one code base that couples all of the business concerns together.
+		
+	3. What is the difference between Monolithic and Microservice?
+		a. In monolithic architecture all the required services are present inside single component where as in Microservices architecture we have small independent services and all these services communicates to each other via API based on use cases and provide end result.
+		
+	4. Why do we need useEffect Hook?
+		a. The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+		b. Syntax : useEffect((Arguments) => {Callback function}, [Array Dependency]);
+		
+	5. What is optional chaining?
+		a. The optional chaining (?.) operator accesses an object's property or calls a function. If the object accessed or function called using this operator is undefined or null, the expression short circuits and evaluates to undefined instead of throwing an error.
+		
+	6. What is Shimmer UI?
+		a. A shimmer UI is a version of the UI that doesn't contain actual content, but instead mimics the layout and shapes of the content that will eventually appear.
+		
+	7. What is the difference between JS expression and JS statement?
+		a. Expressions produce values, while statements perform actions or control the flow of a program. Expressions produce values, while statements perform actions or control the flow of a program.
+		b. example, 5 + 3, myVar, and Math.sqrt(16) are all expressions because they produce a value or result.
+		c. Examples of statements include variable declarations (var x;), loops (for and while loops), conditional statements (if, else, switch), and function declarations (function myFunction() { ... }).
+		 
+	8. What is conditional Rendering, explain with code example?
+		a. In simple term, conditional rendering is rendering an component based on conditions.
+		b. return listOfRestaurant.length === 0 ? ( <Shimmer /> ) : ( <Header /> ) ;
+		c. In above example if condition is true then Shimmer component will be rendered else Header component will be rendered.
+		
+	9. What is CORS?
+		a. CORS stands for Cross Origin Resuorse Sharing.
+		b. Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources. CORS also relies on a mechanism by which browsers make a "preflight" request to the server hosting the cross-origin resource, in order to check that the server will permit the actual request. In that preflight, the browser sends headers that indicate the HTTP method and headers that will be used in the actual request.
+		c. An example of a cross-origin request: the front-end JavaScript code served from https://domain-a.com uses XMLHttpRequest to make a request for https://domain-b.com/data.json.
+		
+		
+	10. What is async and await?
+		a. When you declare a function as async, it means that the function will always return a Promise, implicitly wrapping its return value. This allows you to work with asynchronous code in a more structured and synchronous-like way.
+		b. The await keyword can only be used inside an async function. It is used to pause the execution of the async function until the promise it's waiting for is resolved. It effectively allows you to wait for the result of an asynchronous operation.
+		
+	11. What is the use of const json = await data.json(); in getRestaurants()?
+		a. This will convert received data into readable json format.
+		b. Await keyword means function will wait until it receives data.
