@@ -25,7 +25,7 @@
 }
 .res-card {
     width: 200px;
-    height: 400px;
+    height: 500px;
     background-color: #f0f0f0;
     margin: 10px;
     padding: 5px;
@@ -77,3 +77,18 @@
     cursor: pointer;
     border: 1px solid black;
 }
+.menu-list {
+    width: 70%;
+    height: 20%;
+    background-color: #f0f0f0;
+    margin: 10px;
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bold;
+}
+/* .Menu-img{
+    display:flex;
+    justify-content: right;
+} */

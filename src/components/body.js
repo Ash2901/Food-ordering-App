@@ -4,6 +4,7 @@ import Menu from "../components/menu";
 import { useState, useEffect } from "react";
 import search from "../images/search.png";
 import Shimmer from "../components/Shimmer";
+import {Link} from 'react-router-dom';
 
 const Body = () => {
   const [listOfRestaurant, setListOfRestaurant] = useState([]);
@@ -69,7 +70,9 @@ const Body = () => {
         {filteredRestaurant.map((restaurant) => {
           if (restaurant && restaurant?.info && restaurant?.info?.id) {
             return (
-              <Menu key={restaurant?.info?.id} resData={restaurant} />
+              <Link key={restaurant?.info?.id} to={"/restaurants/"+restaurant?.info?.id}>
+                <Menu resData={restaurant} /> 
+              </Link>
               // Key can differentiate between objects.
             );
           }
