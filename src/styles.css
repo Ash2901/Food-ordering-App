@@ -88,7 +88,8 @@
     font-size: large;
     font-weight: bold;
 }
-/* .Menu-img{
-    display:flex;
-    justify-content: right;
-} */
+.user-name {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
