@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Logo from "../images/logo1.jpg";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 export default Header = () => {
   const [loginButton, setloginButton] = useState("Login");
-//   useEffect(() => {
-//     console.log("UseEffect Called");
-//   }, [loginButton]);
+  const onlineStatus = useOnlineStatus();
   return (
     <div className="container">
       <img id="head-img" src={Logo} alt="logo" />
 
       <div className="nav-bar">
         <ul className="navLinks">
+          <li>
+            Online Status: {(onlineStatus ? "✅" : "🔴")}
+          </li>
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -21,6 +23,9 @@ export default Header = () => {
           </li>
           <li>
             <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/grocery">Grocery</Link>
           </li>
           <li>Cart</li>
           <li>

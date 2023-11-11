@@ -1,0 +1,20 @@
+	1. What is JSX?
+		a. Stands for JavaScript XML
+		b. It is a syntax extension used by React to write HTML like code.
+		
+	2. What are Super powers of JSX?
+		a. Improves code read ability and write ability.
+		b. Type safety
+		c. Supports JavaScript expression
+		d. Improves performance.
+		e. Code reusability.
+		
+	3. Roles of type attribute in script tag? What options can I use there?
+		a. It specifies type of the script.
+		b. The type attribute identifies the content between the <script> and </script> tags.
+		c. Values which can be used : import map, modules, speculationrules.
+		
+	4. {Component} vs {<Component />} vs {<Component> </Component>} in JSX?
+		a. {Component} : It is used to insert a JavaScript expression inside JSX.
+		b. <Component /> : It is used to render a component inside JSX.
+		c. <Component> </Component>: It is used when we wrap multiple elements inside same component.

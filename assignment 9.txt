@@ -1,0 +1,36 @@
+	1. When and why do we need lazy()?
+		a. Lazy() : Inbuilt function present in react library.
+		b. It is used when we want to split our code in smaller chunks to increase performance.
+		c. Component which gets loaded via laze won't be bundled in initial package, when we click on that particular component then this component gets bundled inside other package and gets loaded to our screen.
+		d. Ex : const App = lazy (() => import("./path/App");
+		
+	2. What is suspense?
+		a. This is a inbuilt component present inside react library.
+		b. It is used with component which is lazy loaded inside our application.
+		c. <Suspense> <Application /> </Suspense>
+		d. It is used so that react don't throw error when component is getting loaded inside our application.
+		
+	3. Why we got this error : A component suspended while responding to synchronous input. This will cause the UI to be replaced with a loading indicator. To fix, updates that suspend should be wrapped with startTransistion? How does suspense fix this error?
+		a. This error occurs when we lazy load a component and don't wrap inside Suspense.
+		b. React is very fast and when we call the component that is lazy loaded it takes some time to bundle up component and load on web page, in mean time react throws this error because React thinks this particular component is not present inside our application.
+		c. To overcome this we should wrap our component with Suspense so that it displays that message until component is being bundled.
+		d. Ex: <Suspense fallback = {"Hello World"}> <App /> </ Suspense>
+		
+	4. Advantages and disadvantages of using code splitting pattern?
+		a. Advantages of Code Splitting:
+		1. Faster Initial Page Load
+		2. Efficient Resource Usage
+		3. Improved Caching
+		4. Better Developer Experience
+		5. Dynamic Loading
+		
+		b. Disadvantages of Code Splitting:
+		1. Complexity
+		2. Tooling Dependency
+		3. Potential for Runtime Errors
+		4. Network Overhead
+		5. Debugging Challenges
+		
+	5. When do we and why do we need suspense?
+		a. Suspense is needed in case of lazy loading.
+		b. It is used to display message for time being until actual component gets bundled up and loaded in our web page.
