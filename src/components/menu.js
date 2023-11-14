@@ -7,9 +7,9 @@ export default Menu = (props) => {
     const {cloudinaryImageId, name, cuisines, avgRating, costForTwo, slaString} = resData?.info;
     return (
         <div>
-            <div className="res-card">
-                <img src={CDN_URL+cloudinaryImageId} alt = "first item"></img>
-                <h2>{name}</h2>
+            <div className="w-[220px] m-6 bg-gray-100 p-2 rounded-lg hover:bg-gray-200">
+                <img src={CDN_URL+cloudinaryImageId} alt = "first item" className="rounded-lg"></img>
+                <h2 className="text-lg font-bold my-2">{name}</h2>
                 <h4>{cuisines.join(", ")}</h4> 
                 <h4>{avgRating} ⭐</h4>
                 {/* <h4>{resData.data.costForTwoString}</h4>  */}

@@ -35,16 +35,16 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div>
-        <div className="search-bar">
+      <div className="flex justify-evenly m-4">
+        <div className="flex items-center border-solid border-black border-2 rounded-lg">
           <input
-            className="input-text"
+            className="cursor-pointer"
             type="text"
             placeholder="Please search restaurants here!"
             value = {searchText}
             onChange={(e) => { setsearchText(e.target.value)}}
           ></input>
-          <img className="search-image" src={search} alt="search-image" 
+          <img className="w-8" src={search} alt="search-image" 
           onClick={() => {
             console.log(searchText)
             const filteredRestaurant = listOfRestaurant.filter((res) => 
@@ -56,7 +56,7 @@ const Body = () => {
           />
         </div>
         <button
-          className="res-btn"
+          className="border-2 border-solid border-black rounded-lg bg-gray-100 p-2"
           onClick={() => {
             const filteredlist = filteredRestaurant.filter(
               (res) => {
@@ -71,7 +71,7 @@ const Body = () => {
         </button>
       </div>
 
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {filteredRestaurant.map((restaurant) => {
           if (restaurant && restaurant?.info && restaurant?.info?.id) {
             return (

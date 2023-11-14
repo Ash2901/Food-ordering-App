@@ -1,4 +1,9 @@
-#head-img{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* #head-img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -92,4 +97,4 @@
     border: 1px solid black;
     margin: 5px;
     padding: 5px;
-}
+} */

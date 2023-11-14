@@ -33,8 +33,8 @@ class UserClass extends React.Component {
         //console.log("Child Render");
         const {name, location} = this.state.userInfo;
         return (
-            <div className="user-name">
-                <h2>Name: {name}</h2>
+            <div className="m-4 p-4 border-2 border-solid border-black bg-gray-100 w-[400px]">
+                <h2 className="font-bold text-xl">{name}</h2>
                 <h2>Address: {location}</h2>
                 <h3>Contact: ashishashu2901@gmail.com</h3>
             </div>

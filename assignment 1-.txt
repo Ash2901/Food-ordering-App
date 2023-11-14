@@ -1,0 +1,35 @@
+	1. Explore all the ways of writing CSS?
+		a. General way by using className and defining in styles.css file.
+		b. SCSS/SASS
+		c. Styled Component
+		d. Tailwind CSS
+		
+	2. How do we configure tailwind?
+		a. 1st we have to select framework i.e parcel, vite etc from https://tailwindcss.com/docs/installation/framework-guides URL.
+		b. Follow the steps present on this page.
+		c. Command : 
+		npm install -D tailwindcss postcss
+		npx tailwindcss init
+		d.  Create a .postcssrc file in your project root, and enable the tailwindcss plugin.
+		{
+		  "plugins": {
+		    "tailwindcss": {}
+		  }
+		}
+		e. Add the paths to all of your template files in your tailwind.config.js file.
+		 content: [
+		    "./src/**/*.{html,js,ts,jsx,tsx}",
+		  ],
+		f. Add the Tailwind directives to your CSS 
+		@tailwind base;
+		@tailwind components;
+		@tailwind utilities;
+		
+	3. In tailwind.config.js, what does all keys mean (content, theme, extend, plugins)?
+		a. content: This section is used to specify the content files that Tailwind should analyze to generate the CSS. By default, Tailwind looks for HTML, Markdown, and JavaScript files. The content key allows you to customize this list, which is useful if your project uses different file types or if you want to include specific directories.
+		b. theme: The theme section is where you can customize the default styles and values used by Tailwind. This includes colors, spacing, fonts, and more. By modifying the theme object, you can tailor Tailwind to better match the design requirements of your project.
+		c. extend: This section is used to extend or override the default styles provided by Tailwind. You can add new utility classes, customize existing ones, or introduce entirely new styles. It's a powerful way to make Tailwind more tailored to your project.
+		d. plugins: Tailwind allows you to use plugins to extend its functionality. The plugins section is where you can add and configure these plugins.
+		
+	4. Why do we have .postcssrc file?
+		a. The .postcssrc file is a configuration file used to specify settings for PostCSS, a tool for transforming styles with JavaScript plugins. 

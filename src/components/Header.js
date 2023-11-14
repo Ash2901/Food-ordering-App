@@ -7,30 +7,30 @@ export default Header = () => {
   const [loginButton, setloginButton] = useState("Login");
   const onlineStatus = useOnlineStatus();
   return (
-    <div className="container">
-      <img id="head-img" src={Logo} alt="logo" />
+    <div className="flex p-4 m-4 bg-yellow-50 justify-between">
+      <img id="head-img" src={Logo} alt="logo" className="w-32" />
 
-      <div className="nav-bar">
-        <ul className="navLinks">
-          <li>
+      <div className="flex justify-evenly">
+        <ul className="flex items-center p-4">
+          <li className="m-4">
             Online Status: {(onlineStatus ? "✅" : "🔴")}
           </li>
-          <li>
+          <li className="m-4">
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="m-4">
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className="m-4">
             <Link to="/contact">Contact</Link>
           </li>
-          <li>
+          <li className="m-4">
             <Link to="/grocery">Grocery</Link>
           </li>
-          <li>Cart</li>
-          <li>
+          <li className="m-4">Cart</li>
+          <li className="m-4">
             <button
-              className="login-btn"
+              className="border-2 border-solid border-black bg-gray-100 rounded-lg p-2"
               onClick={() =>
                 loginButton === "Login"
                   ? setloginButton("Logout")
